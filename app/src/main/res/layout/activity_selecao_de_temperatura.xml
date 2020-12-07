@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SelecaoDeTemperatura">
+    <SeekBar
+            android:layout_width="255dp"
+            android:layout_height="35dp" android:id="@+id/sbTemperatura"
+            android:max="2"
+            android:progress="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/btNext" app:layout_constraintVertical_bias="0.58"/>
+    <Button
+            android:text=">>"
+            android:layout_width="123dp"
+            android:layout_height="83dp" android:id="@+id/btNext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="60dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.904"/>
+    <TextView
+            android:layout_width="132dp"
+            android:layout_height="43dp" android:id="@+id/textTemperature"
+            app:layout_constraintBottom_toTopOf="@+id/sbTemperatura"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.892"
+            android:textSize="24sp" android:textAlignment="center" app:layout_constraintHorizontal_bias="0.551"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
